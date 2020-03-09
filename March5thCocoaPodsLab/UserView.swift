@@ -65,7 +65,7 @@ class UserView: UIView {
     private func setupImageView() {
         addSubview(userProfileImage)
         userProfileImage.snp.makeConstraints { (make) in
-            make.top.leading.bottom.trailing.equalTo (self)
+            make.top.leading.bottom.trailing.equalTo (self).offset(20)
         }
     }
     private func setupNameLabel() {

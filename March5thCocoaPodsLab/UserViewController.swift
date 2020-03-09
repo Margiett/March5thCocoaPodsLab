@@ -37,7 +37,7 @@ class UserViewController: UIViewController {
     private func updateUI(for user: User) {
         userView.nameLabel.text = "\(user.name.title). \(user.name.first) \(user.name.last)"
         userView.phoneLabel.text = " Phone #: \(user.phone)"
-        userView.addressLabel.text = "\(user.location.street), \(user.location.city), \(user.location.state), \(user.location.postcode)"
+        userView.addressLabel.text = "\(user.location.street),  \(user.location.city),  \(user.location.state), \(user.location.postcode)"
         userView.userProfileImage.kf.setImage(with: URL(string: user.picture.large))
     }
     
